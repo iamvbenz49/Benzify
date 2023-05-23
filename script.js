@@ -1,7 +1,7 @@
 const audioPlayer = document.getElementById('audioPlayer');
-const play = document.getElementById('play');
-const pause = document.getElementById('pause');
-const next = document.getElementById('next');
+const play = document.getElementsByClassName('play');
+const pause = document.getElementsByClassName('pause');
+const next = document.getElementsByClassName('next');
 
 play.addEventListener('click', function() {
   audioPlayer.play();
