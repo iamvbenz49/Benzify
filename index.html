@@ -14,13 +14,13 @@
     <div class="main">
         <div class="title"><h1>Welcome to Benzify</h1></div>
         <div class="img">
-            <img src="images/grateful.jpeg" alt="">
+            <img src="images/grateful.jpg" id="img" alt="">
         </div>
-        <audio id="audioPlayer" src="music/careless.mp3"></audio>
+        <audio id="audioPlayer" src="music/grateful.mp3"></audio>
         <div class="controls">
-            <button class="pause"><h2>Pause</h2></button>
-            <button class="play"><h2>Play</h2></button>
-            <button class="next"><h2>Next</h2></button>
+            <button class="pause" onclick="pauseMusic()"><h2>Pause</h2></button>
+            <button class="play" onclick="playMusic()"><h2>Play</h2></button>
+            <button class="next" onclick="nextMusic()"><h2>Next</h2></button>
         </div>
     </div>
     <script src="script.js"></script>

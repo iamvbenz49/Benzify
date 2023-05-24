@@ -2,16 +2,22 @@ const audioPlayer = document.getElementById('audioPlayer');
 const play = document.getElementsByClassName('play');
 const pause = document.getElementsByClassName('pause');
 const next = document.getElementsByClassName('next');
+const img = document.getElementById('img');
 
-play.addEventListener('click', function() {
+const music = ["music/grateful","music/careless","music/landscape"]
+const images = ["grateful.jpg","careless.jpg","landscape.jpeg"]
+let i = 0;
+let playMusic = () => {
   audioPlayer.play();
-});
+}
 
-pause.addEventListener('click', function() {
+let pauseMusic = () => {
   audioPlayer.pause();
-});
+}
 
-next.addEventListener('click', function() {
+let nextMusic = () => {
   audioPlayer.pause();
-  audioPlayer.currentTime = 0;
-});
+  img.src = "images/" + images[++i%3] ;
+  audioPlayer.src =  music[i%3] + ".mp3";
+  playMusic();
+}
